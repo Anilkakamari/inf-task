@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <img class="random">
+        <p class="header-text"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-4 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <h2>The Art Of Possible</h2>
+          <!-- Nav pills -->
+          <ul class="nav nav-pills mt-2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#home">Lorem Ipsum is simply dummy text</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#menu1">Its a long established fact that reader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#menu2">Contrary to popular belief</a>
+            </li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Lorem Ipsum</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <img class="random" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Its a long established</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <img class="random" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Contrary to popular belief</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <img class="random" width="100%" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+  <section class="calculator pt-4 pb-4">
+    <div class="container">
+        <form name="loandata" class="loandata">
+          <div class="row">
+          <div class="col-md-6">
+            <h4>What does your portfolio look like?</h4>
+          <div class="form-group">
+            <label>Total Outstanding</label>
+            <input type="text" name="principal" size="12" 
+                      onchange="calculate();" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Charge of Rates</label>
+            <input type="text" name="interest" size="12"  
+                      onchange="calculate();" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Repayment period in years:</label>
+            <input type="text" name="years" size="12" 
+                      onchange="calculate();" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Potential Savings through Collect</h4>
+            <div class="form-group">
+              <label>Monthly logs Savings</label>
+              <input type="text" name="payment" size="12" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Your total payment will be:</label>
+              <input type="text" name="total" size="12" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Total Annual Savings</label>
+              <input type="text" name="totalinterest" size="12" class="form-control">
+            </div>
+          </div>
+          </div>
+        </form>      
+    </div>
+  </section>
+  <section class="mt-3 mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-center p-4">
+            <p class="card-text">Reduce rist of non payment</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center p-4">
+            <p class="card-text">Personalized customer experiences</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center p-4">
+            <p class="card-text"> Improved Productivity</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center p-4">
+            <p class="card-text">Reduce rist of non payment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script language="JavaScript">
+function calculate() {
+    var principal = document.loandata.principal.value;
+    var interest = document.loandata.interest.value / 100 / 12;
+    var payments = document.loandata.years.value * 12;
+
+    // Now compute the monthly payment figure, using esoteric math.
+    var x = Math.pow(1 + interest, payments);
+    var monthly = (principal*x*interest)/(x-1);
+
+    // Check that the result is a finite number. If so, display the results.
+    if (!isNaN(monthly) && 
+        (monthly != Number.POSITIVE_INFINITY) &&
+        (monthly != Number.NEGATIVE_INFINITY)) {
+
+        document.loandata.payment.value = round(monthly);
+        document.loandata.total.value = round(monthly * payments);
+        document.loandata.totalinterest.value = 
+            round((monthly * payments) - principal);
+    }
+    // Otherwise, the user's input was probably invalid, so don't
+    // display anything.
+    else {
+        document.loandata.payment.value = "";
+        document.loandata.total.value = "";
+        document.loandata.totalinterest.value = "";
+    }
+}
+
+  // This simple method rounds a number to two decimal places.
+  function round(x) {
+    return Math.round(x*100)/100;
+  }
+</script>
+  </section>
+  <script>
+    var images = [
+      "img/banner.jpg",
+      "img/banner-1.jpg",
+      "img/banner-2.jpg",
+      "img/banner-3.jpg"
+    ];
+    var content = [
+      "Lorem Ipsum",
+      "Lorem Ipsum is simply dummy text",
+      "Lorem Ipsum is simply dummy text",
+      "It is a long established fact that a reader"
+    ];
+    var size = images.length;
+    var x = Math.floor(size*Math.random());
+    $('.random').attr('src',images[x]);
+    var size = content.length;
+    var y = Math.floor(size*Math.random());
+    $('.header-text').text(content[y]);
+  </script>
+
+
+</body>
+</html>
